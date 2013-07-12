@@ -1,0 +1,135 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+@import "compass/reset";
+@import "compass";
+@import "agric";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic);
+
+$base-color: #688ED8;
+$base-font-size: 16px;
+$sans-font-family: 'Open Sans', sans-serif;
+$base-font: $sans-font-family;
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  font-family: $base-font;
+  font-size: $base-font-size;
+  line-height: 1.4em;
+  color: #000;
+}
+
+h2 {
+  &, * {
+    font-size: 48px;
+    font-weight: lighter;
+  }
+  @include ellipsis;
+}
+
+h3 {
+  margin-bottom: 0.4em;
+  &, * {
+    font-size: 24px;
+    font-weight: lighter;
+    color: #D40;
+  }
+}
+
+a {
+  &, * {
+    color: $base-color;
+    text-decoration: none;
+    outline: none;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+strong {
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 0.7em;
+  text-align: justify;
+}
+ul, ol {
+  margin: 0.7em 0 0.7em 2em;
+  li {
+    list-style-type: disc;
+  }
+}
+
+article {
+  position: relative;
+  .referenced-on {
+    @media only screen and (min-width: 1025px) {
+      @include background(#F9F9F9);
+      padding: 0 round($base-font-size * 0.6);
+      position: absolute;
+      left: -120px;
+      line-height: 1.4*24px;
+    }
+  }
+}
+
+
+#ekylibre {
+  width: 100%;
+}
+
+body {
+  min-width: 320px;
+}
+
+#menu {
+  @include background(#F9F9F9);
+  @include box-shadow(0 0 round($base-font-size * 0.4) rgba(black, 0.04) inset);
+  padding: round($base-font-size * 0.4);
+  margin: 0;
+  ul {
+    margin: 0;
+    text-align: center;
+    li {
+      @include inline-block;
+      margin: 0 $base-font-size * 0.5;
+      a {
+        line-height: 1.4em;
+        text-transform: uppercase;
+      } 
+    }
+  }
+}
+.slide {
+  @include clearfix;
+  .main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 12px 48px;
+    @media only screen and (max-width: 1024px) {
+      padding: 12px;
+    }
+  }
+}
+
+#legals {
+  &, * {
+    font-size: round(0.8*$base-font-size);
+    text-align: center;
+    color: #777;
+  }
+}
+
+@import "bootstrap-responsive";
