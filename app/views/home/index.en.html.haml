@@ -1,1 +1,56 @@
 =title("Ekylibre")
+
+=slide :head do
+  =image_tag("ekylibre.svg", :id => :ekylibre)
+
+=slide :about do
+  :markdown
+    Ekylibre is an farming ERP distributed under GNU GPL v3 license. It includes following modules:
+
+      - Relationship management
+      - Accountancy
+      - Sales, purchases, and stocks
+      - Production management and traceability
+      - User-based access control
+
+    It's an web application based on [Ruby on Rails](http://rubyonrails.org).
+
+=render "menu"
+
+=slide :news do
+  %h2 
+    %i.icon-bullhorn
+    News
+  =news
+
+=slide :download do
+  %h2 
+    %i.icon-download-alt
+    Download
+  %h3 Stable version 0.4.1
+  :markdown
+
+      - [Microsoft Windows XP SP2 at least (.exe)](https://www.ekylibre.org/releases/tags/0.4.1/win32/ekylibre-0.4.1.exe)
+      - [Debian Squeeze and Ubuntu 10.10 Maverick (.deb)](https://www.ekylibre.org/releases/tags/0.4.1/debian/ekylibre_0.4.1_all.deb)
+      - Sources: [ZIP](https://www.ekylibre.org/releases/tags/0.4.1/source/ekylibre-0.4.1-source.zip) [TGZ](https://www.ekylibre.org/releases/tags/0.4.1/source/ekylibre-0.4.1-source.tar.gz) [BZ2](https://www.ekylibre.org/releases/tags/0.4.1/source/ekylibre-0.4.1-source.tar.bz2)
+
+  %h3 Stable version 0.3.2.4
+  :markdown
+
+      - [Microsoft Windows XP SP2 at least (.exe)](https://www.ekylibre.org/releases/tags/0.3.2.4/win32/ekylibre-0.3.2.4.exe)
+        Caution! From this version, a database management system (PostgreSQL) has been set on Windows.
+        **This version is incompatible with its predecessors <= 0.3.0**.
+      - [Debian Squeeze and Ubuntu 10.10 Maverick  (.deb)](https://www.ekylibre.org/releases/tags/0.3.2.4/debian/ekylibre_0.3.2.4_all.deb)
+      - Sources: [ZIP](https://www.ekylibre.org/releases/tags/0.3.2.4/source/ekylibre-0.3.2.4-source.zip) [TGZ](https://www.ekylibre.org/releases/tags/0.3.2.4/source/ekylibre-0.3.2.4-source.tar.gz) [BZ2](https://www.ekylibre.org/releases/tags/0.3.2.4/source/ekylibre-0.3.2.4-source.tar.bz2)
+
+  %h3 Other versions
+  %ul
+    %li=link_to("Last version ZIP", "https://github.com/ekylibre/ekylibre/archive/master.zip")
+    %li=link_to("Last version TGZ", "https://github.com/ekylibre/ekylibre/archive/master.tgz")
+    %li=link_to("Older versions", "https://www.ekylibre.org/releases/tags")
+
+=slide :legals do
+  :markdown
+    This project isco-funded est cofinancé by European Union. Europe enrol in Aquitaine with the European Regional Development Fund. 
+
+    Aquitaine Regional Council • SACEA
