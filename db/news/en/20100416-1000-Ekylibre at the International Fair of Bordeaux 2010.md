@@ -1,0 +1,1 @@
+On may, 14th Ekylibre will be presented in the hall 3 at the International Fair or Bordeaux.
