@@ -96,12 +96,18 @@ article {
 
 body {
   min-width: 320px;
+  padding: 0;
+  margin: 0;
+  position: relative;
 }
 
 #menu {
+  width: 100%;
+  z-index: 10000;
+  position: absolute;
   @include background(#F9F9F9);
   @include box-shadow(0 0 round($base-font-size * 0.4) rgba(black, 0.04) inset);
-  padding: round($base-font-size * 0.4);
+  padding: round($base-font-size * 0.4) 0;
   margin: 0;
   ul {
     margin: 0;
@@ -115,7 +121,20 @@ body {
       } 
     }
   }
+  .back-to-top {
+    visibility: hidden;
+  }
+  &.fixed {
+    @include box-shadow(0 0 round($base-font-size * 0.8) rgba(black, 0.12));
+    .back-to-top {
+      visibility: visible;
+    }
+  }
+  & + .slide {
+    margin-top: 36px;
+  }
 }
+
 .slide {
   @include clearfix;
   .main {
@@ -125,6 +144,16 @@ body {
     @media only screen and (max-width: 1024px) {
       padding: 12px;
     }
+  }
+}
+
+#about {
+  background: center center image-url('fresco.png') repeat-x;
+
+  .main {
+    min-height: 168px;
+    background: rgba(white, 0.5); 
+    @include box-shadow(0 0 20px rgba(white, 0.9)); 
   }
 }
 

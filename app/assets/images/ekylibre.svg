@@ -18,9 +18,9 @@
    version="1.0"
    sodipodi:docname="ekylibre.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
-   inkscape:export-filename="/home/brice/dev/ekylibre/public/images/ekylibre.png"
-   inkscape:export-xdpi="180"
-   inkscape:export-ydpi="180">
+   inkscape:export-filename="/home/brice/Projets/sekyl/app/assets/images/ekylibre.png"
+   inkscape:export-xdpi="76.5"
+   inkscape:export-ydpi="76.5">
   <defs
      id="defs2550">
     <linearGradient
@@ -140,7 +140,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1"
      inkscape:cx="303.60381"
-     inkscape:cy="61.04286"
+     inkscape:cy="59.04286"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
