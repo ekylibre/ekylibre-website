@@ -66,8 +66,18 @@
     %li=link_to("Dernière version TGZ", "https://github.com/ekylibre/ekylibre/archive/master.tgz")
     %li=link_to("Anciennes versions", "https://www.ekylibre.org/releases/tags")
 
-=slide :contact do
-  %h2 Nous contacter
+=slide :screenshots do
+  %h2 
+    %i.icon-desktop
+    Copies d'écrans
+  =image_tag("animals-edit.png")
+  =image_tag("animals-show.png")
+  =image_tag("dashboard-production.png")
+  =image_tag("journals-show")
+  =image_tag("land_parcels-index.png")
+  =image_tag("sales-show-pdf.png") 
+
+=slide :legals do
   .links
     =mail_to("contact@ekylibre.org") do
       %i.icon-envelope
@@ -77,9 +87,7 @@
       @EkylibreERP
     =link_to("https://www.facebook.com/pages/Ekylibre/219433324846514") do
       %i.icon-facebook
-      Page Facebook
-
-=slide :legals do   
+      Page Facebook   
   :markdown
     Ce projet est cofinancé par l'Union Européenne. L'Europe s'engage en Aquitaine avec le Fonds européen de développement régional. 
 
