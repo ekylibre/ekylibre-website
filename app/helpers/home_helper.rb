@@ -19,4 +19,14 @@ module HomeHelper
     return html
   end
 
+  def screenshots
+    
+    images = ["animals-edit","animals-show","dashboards-production","journals-show","land_parcels-index","sales-show-pdf"]
+    html = "".html_safe
+    for image in images
+      html << link_to(image_tag("screenshots/thumbnails/#{image}.png"), image_path("screenshots/originals/#{image}.png"), class: "screenshot")
+    end
+    return html
+  end
+
 end
