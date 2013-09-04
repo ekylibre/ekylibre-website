@@ -14,4 +14,12 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require jquery.smint
+//= require fancybox
 //= require_tree .
+//= require_self
+
+(function ($) {
+    $(document).ready(function() {
+	$("*[data-gallery]").fancybox();
+    });
+})(jQuery);

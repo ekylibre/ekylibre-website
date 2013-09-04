@@ -9,6 +9,7 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require fancybox
  *= require_tree .
  */
 
@@ -164,5 +165,24 @@ body {
     color: #777;
   }
 }
+
+.screenshots {
+  text-align: center;
+  .screenshot {
+    @include inline-block;
+    margin: 0.5*$base-font-size;
+    @include transform(scale(0.8));
+    img {
+      line-height: 0;    
+      border: none;
+      vertical-align: middle;
+    }
+    @include transition(box-shadow 0.4s ease-in-out, transform 0.4s ease-in-out);
+    &:hover {
+      @include box-shadow(0 0 $base-font-size rgba(#000, 0.4));
+      @include transform(scale(1));
+    }
+  }
+} 
 
 @import "bootstrap-responsive";
