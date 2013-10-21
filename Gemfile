@@ -4,16 +4,16 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 gem 'rails-i18n'
 gem 'i18n-complements'
-gem 'routing-filter', github: "svenfuchs/routing-filter"
+gem 'routing-filter', '~> 0.4.0.pre'
 
 
 gem 'haml'
 gem 'markdown'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
-gem 'compass', '~> 0.13.alpha.4'
-gem "compass-rails", github: "milgner/compass-rails", ref: "1749c06f15dc4b058427e7969810457213647fb8"
+gem 'sass-rails', '~> 4.0.1'
+gem 'compass', '~> 0.13.alpha.7'
+gem "compass-rails", github: 'Compass/compass-rails', branch: 'rails4-hack'
 gem 'bootstrap-sass'
 # gem 'font-awesome-rails'
 gem 'agric'
@@ -22,7 +22,7 @@ gem 'agric'
 gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', '~> 4.0.1'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer', platforms: :ruby
