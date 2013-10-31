@@ -14,7 +14,7 @@ gem 'markdown'
 gem 'sass-rails', '~> 4.0.1'
 gem 'compass', '~> 0.13.alpha.7'
 gem "compass-rails", github: 'Compass/compass-rails', branch: 'rails4-hack'
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', '< 3.0.0'
 # gem 'font-awesome-rails'
 gem 'agric'
 
