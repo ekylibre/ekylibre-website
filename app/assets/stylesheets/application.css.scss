@@ -164,7 +164,35 @@ body {
     text-align: center;
     color: #777;
   }
+  .links {
+    padding: 20px 0;
+    > a {
+      > i.comm {
+        padding: 24px;
+        margin: 0 24px;
+        @include inline-block;
+        background: #777;
+        color: white;
+        @include border-radius(1000px);
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        font-size: 48px;
+        text-align: center;
+      }
+      &:hover {
+        &, * {
+          text-decoration: none;
+        }
+        i {
+          background: $base-color;
+        }
+      }
+    }
+  }
+
 }
+
 
 .screenshots {
   text-align: center;

@@ -1,9 +1,9 @@
-=title("Ekylibre")
+= title("Ekylibre")
 
-=slide :head do
-  =image_tag("ekylibre.svg", :id => :ekylibre)
+= slide :head do
+  = image_tag("ekylibre.svg", :id => :ekylibre)
 
-=slide :about do
+= slide :about do
   :markdown
     Ekylibre est un logiciel de gestion intégré pour les TPE agricoles et les TPE de manière plus générale. Le logiciel est distribué sous la licence GNU GPL 3. Il comprend les modules suivants :
 
@@ -15,15 +15,21 @@
 
     C’est une application web (donc multi-postes) basée sur le framework [Ruby on Rails](http://rubyonrails.org).
 
-=render "menu"
+= render "menu"
 
-=slide :news do
+= slide :news do
   %h2 
     %i.icon-bullhorn
     Actualités
-  =news
+  = news
 
-=slide :demo do
+= slide :screenshots do
+  %h2 
+    %i.icon-desktop
+    Copies d'écrans
+  .screenshots= screenshots
+
+= slide :demo do
   %h2 
     %i.icon-play-sign
     Démonstration
@@ -32,18 +38,24 @@
     Cette version est remise à jour régulièrement avec la dernière version du projet. 
     De ce fait, elle est relativement instable mais présente l'ensemble des dernières nouveautés :
   %ul
-    %li=link_to("Démonstration 1.0 (dev)", 'http://ekylibre.org/demo-unstable')
+    %li= link_to("Démonstration 1.0 (dev)", 'http://ekylibre.org/demo-unstable')
   %h3 Dernière version stable
   %p 
     Cette version date de janvier 2013. Elle est la version recommandée en production :
   %ul
-    %li=link_to("Démonstration 0.4", 'http://ekylibre.org/demo-stable')
+    %li= link_to("Démonstration 0.4", 'http://ekylibre.org/demo-stable')
   
 
-=slide :download do
+= slide :download do
   %h2 
     %i.icon-download-alt
     Téléchargement
+  %h3 Version stable 0.4.3
+  :markdown
+
+      - [Debian Wheezy et Ubuntu 10.10 Maverick (.deb)](https://www.ekylibre.org/releases/tags/0.4.3/debian/ekylibre_0.4.3_all.deb)
+      - Sources : [ZIP](https://www.ekylibre.org/releases/tags/0.4.3/source/ekylibre-0.4.3-source.zip) [TGZ](https://www.ekylibre.org/releases/tags/0.4.3/source/ekylibre-0.4.3-source.tar.gz) [BZ2](https://www.ekylibre.org/releases/tags/0.4.3/source/ekylibre-0.4.3-source.tar.bz2)
+
   %h3 Version stable 0.4.2
   :markdown
 
@@ -62,27 +74,12 @@
 
   %h3 Autres versions
   %ul
-    %li=link_to("Dernière version ZIP", "https://github.com/ekylibre/ekylibre/archive/master.zip")
-    %li=link_to("Dernière version TGZ", "https://github.com/ekylibre/ekylibre/archive/master.tgz")
-    %li=link_to("Anciennes versions", "https://www.ekylibre.org/releases/tags")
+    %li= link_to("Dernière version ZIP", "https://github.com/ekylibre/ekylibre/archive/master.zip")
+    %li= link_to("Dernière version TGZ", "https://github.com/ekylibre/ekylibre/archive/master.tgz")
+    %li= link_to("Anciennes versions", "https://www.ekylibre.org/releases/tags")
 
-=slide :screenshots do
-  %h2 
-    %i.icon-desktop
-    Copies d'écrans
-  .screenshots= screenshots
-
-=slide :legals do
-  .links
-    =mail_to("contact@ekylibre.org") do
-      %i.icon-envelope
-      contact[at]ekylibre.org
-    =link_to("https://twitter.com/EkylibreERP") do
-      %i.icon-twitter
-      @EkylibreERP
-    =link_to("https://www.facebook.com/pages/Ekylibre/219433324846514") do
-      %i.icon-facebook
-      Page Facebook   
+= slide :legals do
+  = render "links"
   :markdown
     Ce projet est cofinancé par l'Union Européenne. L'Europe s'engage en Aquitaine avec le Fonds européen de développement régional. 
 

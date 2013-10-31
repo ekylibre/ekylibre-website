@@ -1,9 +1,9 @@
-=title("Ekylibre")
+= title("Ekylibre")
 
-=slide :head do
-  =image_tag("ekylibre.svg", :id => :ekylibre)
+= slide :head do
+  = image_tag("ekylibre.svg", :id => :ekylibre)
 
-=slide :about do
+= slide :about do
   :markdown
     Ekylibre is a farming ERP distributed under GNU GPL v3 license. It includes following modules:
 
@@ -15,15 +15,21 @@
 
     It's an web application based on [Ruby on Rails](http://rubyonrails.org).
 
-=render "menu"
+= render "menu"
 
-=slide :news do
+= slide :news do
   %h2 
     %i.icon-bullhorn
     News
-  =news
+  = news
 
-=slide :demo do
+= slide :screenshots do
+  %h2 
+    %i.icon-desktop
+    Screenshots
+  .screenshots= screenshots
+
+= slide :demo do
   %h2 
     %i.icon-play-sign
     Demonstration
@@ -32,17 +38,23 @@
     This version uses the last sources of the project.
     Consequently, it's quite unstable but it shows all the last new features:
   %ul
-    %li=link_to("Demonstration 1.0 (dev)", 'http://ekylibre.org/demo-unstable')
+    %li= link_to("Demonstration 1.0 (dev)", 'http://ekylibre.org/demo-unstable')
   %h3 Last stable version
   %p 
     This version was released in january 2013. It's the recommanded version for production:
   %ul
-    %li=link_to("Demonstration 0.4", 'http://ekylibre.org/demo-stable')  
+    %li= link_to("Demonstration 0.4", 'http://ekylibre.org/demo-stable')  
 
-=slide :download do
+= slide :download do
   %h2 
     %i.icon-download-alt
     Download
+  %h3 Stable version 0.4.3
+  :markdown
+
+      - [Debian Wheezy and Ubuntu 10.10 Maverick (.deb)](https://www.ekylibre.org/releases/tags/0.4.3/debian/ekylibre_0.4.3_all.deb)
+      - Sources: [ZIP](https://www.ekylibre.org/releases/tags/0.4.3/source/ekylibre-0.4.3-source.zip) [TGZ](https://www.ekylibre.org/releases/tags/0.4.3/source/ekylibre-0.4.3-source.tar.gz) [BZ2](https://www.ekylibre.org/releases/tags/0.4.3/source/ekylibre-0.4.3-source.tar.bz2)
+
   %h3 Stable version 0.4.2
   :markdown
 
@@ -61,11 +73,12 @@
 
   %h3 Other versions
   %ul
-    %li=link_to("Last version ZIP", "https://github.com/ekylibre/ekylibre/archive/master.zip")
-    %li=link_to("Last version TGZ", "https://github.com/ekylibre/ekylibre/archive/master.tgz")
-    %li=link_to("Older versions", "https://www.ekylibre.org/releases/tags")
+    %li= link_to("Last version ZIP", "https://github.com/ekylibre/ekylibre/archive/master.zip")
+    %li= link_to("Last version TGZ", "https://github.com/ekylibre/ekylibre/archive/master.tgz")
+    %li= link_to("Older versions", "https://www.ekylibre.org/releases/tags")
 
-=slide :legals do
+= slide :legals do
+  = render "links"
   :markdown
     This project is co-funded by European Union. Europe enrols in Aquitaine with the European Regional Development Fund. 
 
