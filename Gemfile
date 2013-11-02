@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.0'
+gem 'rails', '4.0.1'
 gem 'rails-i18n'
 gem 'i18n-complements'
 gem 'routing-filter', '~> 0.4.0.pre'
@@ -13,7 +13,8 @@ gem 'markdown'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.1'
 gem 'compass', '~> 0.13.alpha.7'
-gem "compass-rails", github: 'Compass/compass-rails', branch: 'rails4-hack'
+gem 'compass-rails', '~> 2.0.alpha.0' #'github: 'Compass/compass-rails', branch: 'rails4-hack'
+# gem "compass-rails", github: 'Compass/compass-rails', branch: 'rails4-hack'
 gem 'bootstrap-sass', '< 3.0.0'
 # gem 'font-awesome-rails'
 gem 'agric'
