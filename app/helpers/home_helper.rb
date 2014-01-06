@@ -20,7 +20,7 @@ module HomeHelper
   end
 
   def screenshots
-    images = ["animals-edit","animals-show","dashboards-production","journals-show","land_parcels-index","sales-show-pdf"]
+    images = ["home","animals-edit","animals_new","animals-show","stock_dashboard","incoming_delivery_new","production_dashboard_1","production_dashboard_2","journals-show","sales-show-pdf","accountancy_dashboard"]
     html = "".html_safe
     for image in images
       html << link_to(image_tag("screenshots/thumbnails/#{image}.png"), image_path("screenshots/originals/#{image}.png"), rel: 'screenshots', 'data-gallery' => true, class: "screenshot")
