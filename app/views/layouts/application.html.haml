@@ -1,8 +1,9 @@
 !!! 5
 %html
   %head
-    %title=(content_for?(:title) ? content_for(:title) : "Sekyl")
-    %meta{:content => "width=device-width, initial-scale=1.0, maximum-scale=1.0", :name => "viewport"}
+    %title= (content_for?(:title) ? content_for(:title) : "Sekyl")
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0, maximum-scale=1.0"}
+    %meta{:name => "google-site-verification", :content => "OXRu7SRhy9v5WBUVXOGVTzC2xf1aRkp0TZKbJd-fXlc"}
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
@@ -16,4 +17,4 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-  %body=yield
+  %body= yield
