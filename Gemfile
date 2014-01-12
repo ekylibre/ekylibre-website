@@ -13,9 +13,9 @@ gem 'markdown'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.1'
 gem 'compass', '~> 0.13.alpha.7'
-gem 'compass-rails', '~> 2.0.alpha.0' #'github: 'Compass/compass-rails', branch: 'rails4-hack'
+gem 'compass-rails'
 # gem "compass-rails", github: 'Compass/compass-rails', branch: 'rails4-hack'
-gem 'bootstrap-sass', '< 3.0.0'
+gem 'bootstrap-sass', '< 3'
 # gem 'font-awesome-rails'
 gem 'agric'
 
@@ -36,7 +36,7 @@ gem 'fancybox2-rails', '~> 0.2.4'
 gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 1.2'
+gem 'jbuilder'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

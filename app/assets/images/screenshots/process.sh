@@ -5,5 +5,5 @@ do
     thumbnail=thumbnails/`basename $file`
     echo "$file => $thumbnail"
     mkdir -p `dirname $thumbnail`
-    convert $file -geometry 1000x200 $thumbnail
+    convert $file -geometry 1000x150 $thumbnail
 done
