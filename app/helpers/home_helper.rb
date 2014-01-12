@@ -19,6 +19,7 @@ module HomeHelper
     return html
   end
 
+
   def screenshots
     # images = ["home", "animals-edit", "animals_new", "animals-show", "stock_dashboard", "incoming_delivery_new", "production_dashboard_1", "production_dashboard_2", "journals-show", "sales-show-pdf", "accountancy_dashboard"]
     image_dir = Rails.root.join("app", "assets", "images", "screenshots", "originals")
