@@ -12,7 +12,7 @@ gem 'markdown'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.1'
-gem 'compass', '~> 0.13.alpha.7'
+gem 'compass'
 gem 'compass-rails'
 # gem "compass-rails", github: 'Compass/compass-rails', branch: 'rails4-hack'
 gem 'bootstrap-sass', '< 3'
