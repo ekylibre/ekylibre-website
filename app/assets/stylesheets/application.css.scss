@@ -171,15 +171,18 @@ body {
 #legals {
   &, * {
     font-size: round(0.8*$base-font-size);
-    text-align: center;
     color: #777;
+    text-align: center;
   }
+}
+
   .links {
+    text-align: center;
     padding: 20px 0;
     > a {
       > i.comm {
         padding: 24px;
-        margin: 0 24px;
+        margin: 0 6px;
         @include inline-block;
         background: #777;
         color: white;
@@ -201,7 +204,6 @@ body {
     }
   }
 
-}
 
 
 .screenshots {

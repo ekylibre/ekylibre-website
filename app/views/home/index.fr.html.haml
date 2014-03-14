@@ -14,6 +14,7 @@
       - Le tout avec une gestion de droits à l’utilisateur
 
     C’est une application web (donc multi-postes) basée sur le framework [Ruby on Rails](http://rubyonrails.org).
+  = render "links"
 
 = render "menu"
 
@@ -83,7 +84,6 @@
     %li= link_to("Anciennes versions", "https://ekylibre.org/releases/tags")
 
 = slide :legals do
-  = render "links"
   :markdown
     Ce projet est cofinancé par l'Union Européenne. L'Europe s'engage en Aquitaine avec le Fonds européen de développement régional. 
 
