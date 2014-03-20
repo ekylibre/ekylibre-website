@@ -19,7 +19,7 @@
 = render "menu"
 
 = slide :video do
-  %iframe{src: "//www.youtube.com/embed/_NMZMo7FtAk?autohide=1&autoplay=0&color=white&modestbranding=1&rel=0&showinfo=0&theme=light", frameborder: 0, allowfullscreen: true, class: "video"}
+  %iframe{src: "http://www.youtube.com/embed/#{@video}?autohide=1&autoplay=0&color=white&modestbranding=1&rel=0&showinfo=0&theme=light&listType=user_uploads", frameborder: 0, allowfullscreen: true, class: "video"}
 
 = slide :news do
   %h2 

@@ -1,11 +1,13 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.2'
+gem 'rails', '4.0.4'
 gem 'rails-i18n'
 gem 'i18n-complements'
 gem 'routing-filter', '~> 0.4.0.pre'
 
+# gem 'google-api-client'
+gem 'feedjira'
 
 gem 'haml'
 gem 'markdown'
