@@ -21,27 +21,8 @@
 	menu.prop("stickyInitialTop", menu.css('top'));
 
 	stickyTop = menu.prop("stickyTop");
-	// check position and make sticky if needed
-	stickyMenu = function(){
-	    // current distance top
-	    var scrollTop = $(window).scrollTop(); 
-	    
-	    // if we scroll more than the navigation, change its position to fixed and add class 'fxd', otherwise change it back to absolute and remove the class
-	    if (scrollTop > stickyTop) { 
-		menu.css({ 'position': 'fixed', 'top': 0 }).addClass('fixed').removeClass('unfixed'); // menu.prop('stickyInitialPosition') menu.prop('stickyInitialTop')
-		
-	    } else {
-		menu.css({ 'position': menu.prop('stickyInitialPosition'), 'top': menu.prop('stickyInitialTop') }).removeClass('fixed').addClass('unfixed'); 
-	    }   
-	};
-	
-	// run function
-	stickyMenu();
-	
-	// run function every time you scroll
-	$(window).scroll(function() {
-	    stickyMenu();
-	});
+	// fix position once and for all
+	menu.css({ 'position': 'fixed', 'top': 0 }).addClass('fixed').removeClass('unfixed'); 
     }
 
 
