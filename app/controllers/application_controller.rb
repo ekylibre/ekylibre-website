@@ -8,11 +8,10 @@ class ApplicationController < ActionController::Base
   protected
   
   def set_locale
-    # request.env['HTTP_ACCEPT_LANGUAGE'].inspect
-    I18n.locale = request.env['HTTP_ACCEPT_LANGUAGE'].scan(/^[a-z]{2}/).first.downcase.to_sym
-    if I18n.locale != :fr
-      I18n.locale = :en
-    end
-    I18n.locale = params[:locale].to_sym if params[:locale].to_s.size == 2
+    http_accept_language = request.env['HTTP_ACCEPT_LANGUAGE'] || 'en'
+    I18n.locale = http_accept_language.scan(/^[a-z]{2}/).first.downcase.to_sym
+    I18n.locale = :en if I18n.locale != :fr
+    locale = params[:locale]
+    I18n.locale = locale.to_sym if locale && locale.to_s.size == 2
   end
 end
