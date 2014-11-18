@@ -1,0 +1,5 @@
+- @articles.each do |article|
+  %article
+    .referenced-on= article[:published]
+    %h3
+      %a{:title => article[:title], :href => article[:url]}= article[:title]

@@ -12,20 +12,18 @@ gem 'feedjira'
 gem 'haml'
 gem 'markdown'
 
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.1'
-gem 'compass'
-gem 'compass-rails'
-# gem "compass-rails", github: 'Compass/compass-rails', branch: 'rails4-hack'
-gem 'bootstrap-sass', '< 3'
-# gem 'font-awesome-rails'
-gem 'agric'
-
-# Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
-
-# Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.1'
+group :assets do
+  # Use SCSS for stylesheets
+  gem 'sass-rails', '~> 4.0.1'
+  gem 'compass'
+  gem 'compass-rails'
+  gem 'bootstrap-sass', '< 3'
+  gem 'agric'
+  # Use Uglifier as compressor for JavaScript assets
+  gem 'uglifier', '>= 1.3.0'
+  # Use CoffeeScript for .js.coffee assets and views
+  gem 'coffee-rails', '~> 4.0.1'
+end
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer', platforms: :ruby
@@ -49,7 +47,7 @@ end
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Use unicorn as the app server
-gem 'unicorn'
+gem 'unicorn', require: false
 # gem 'thin'
 
 # Use Capistrano for deployment
