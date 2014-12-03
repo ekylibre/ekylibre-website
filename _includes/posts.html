@@ -1,0 +1,10 @@
+{% assign posts=site.posts | where:"lang", include.lang %}
+<ul class="posts">
+  {% for post in posts %}
+  <li>
+    <span class="post-date">{{ post.date | localize_date: page.lang, "long" }}</span>
+    
+    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" lang="{{post.lang}}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>

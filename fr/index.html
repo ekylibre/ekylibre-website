@@ -1,0 +1,22 @@
+---
+---
+<div class="home">
+
+  <div class="slide">
+    <img src="{{ "/images/logo.svg" | prepend: site.baseurl }}" id="ekylibre-erp">
+  </div>
+
+  <div class="slide">
+  </div>
+
+  <div class="slide">
+  </div>
+
+  <div class="slide">
+    <h2>Actualités</h2>
+    {% include posts.html lang=page.lang %}
+  </div>
+  
+  <p class="rss-subscribe">Suivre <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

@@ -1,1 +1,0 @@
-Ekylibre will be presented on july 7th at 9h20 during the LSM 2010 in Bordeaux. A workshop is scheduled at 10h20.

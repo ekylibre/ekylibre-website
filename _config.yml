@@ -1,0 +1,64 @@
+# Site settings
+title: Ekylibre ERP
+email: contact@ekylibre.org
+description: "Official website of the project Ekylibre ERP."
+baseurl: ""
+url: "http://erp.ekylibre.org"
+twitter_username: EkylibreERP
+github_username:  ekylibre/erp
+
+exclude: app, README.rdoc
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+#permalink: /:title/
+
+locales:
+  - en
+  - fr
+
+defaults:
+  -
+    scope:
+      path: en
+    values:
+      layout: default
+      lang: en
+  -
+    scope:
+      path: fr
+    values:
+      layout: default
+      lang: fr
+
+nav:
+  en:
+    logo:
+      title: "Ekylibre ERP"
+      url:   "/"
+    journal:
+      title: "journal"
+      url:   "/index.html"
+    about:
+      title: "about"
+      url:   "/about/"
+  fr:
+    logo:
+      title: "sylvain durand"
+      url:   "/journal/"
+    journal:
+      title: "journal"
+      url:   "/journal/"
+    about:
+      title: "à propos"
+      url:   "/a-propos/"
+t:
+  en:
+    created: "Published on the"
+    author: "by"
+    description: "Personal website, made with real pieces of code: articles about Jekyll, Raspberry Pi, R..."
+  fr:
+    created: "Publié le"
+    author: "par"
+    description: "Site personnel, avec des vrais bouts de code dedans : articles sur Jekyll, Raspberry Pi, R..."
