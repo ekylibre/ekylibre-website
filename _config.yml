@@ -7,7 +7,10 @@ url: "http://erp.ekylibre.org"
 twitter_username: EkylibreERP
 github_username:  ekylibre/erp
 
-exclude: app, README.rdoc
+exclude:
+  - app
+  - doc
+  - README.rdoc
 
 # Build settings
 markdown: kramdown
