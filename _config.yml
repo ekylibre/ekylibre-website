@@ -1,11 +1,11 @@
 # Site settings
-title: Ekylibre ERP
+title: Ekylibre
 email: contact@ekylibre.org
-description: "Official website of the project Ekylibre ERP."
+description: "Official website of the project Ekylibre."
 baseurl: ""
-url: "http://erp.ekylibre.org"
-twitter_username: EkylibreERP
-github_username:  ekylibre/erp
+url: "http://ekylibre.org"
+twitter_username: Ekylibre
+github_username:  ekylibre/ekylibre
 
 exclude:
   - app
@@ -38,7 +38,7 @@ defaults:
 nav:
   en:
     logo:
-      title: "Ekylibre ERP"
+      title: "Ekylibre"
       url:   "/"
     journal:
       title: "journal"
