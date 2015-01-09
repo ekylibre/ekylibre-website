@@ -12,18 +12,18 @@ gem 'feedjira'
 gem 'haml'
 gem 'markdown'
 
-group :assets do
-  # Use SCSS for stylesheets
-  gem 'sass-rails', '~> 4.0.1'
-  gem 'compass'
-  gem 'compass-rails'
-  gem 'bootstrap-sass', '< 3'
-  gem 'agric'
-  # Use Uglifier as compressor for JavaScript assets
-  gem 'uglifier', '>= 1.3.0'
-  # Use CoffeeScript for .js.coffee assets and views
-  gem 'coffee-rails', '~> 4.0.1'
-end
+# group :assets do
+# Use SCSS for stylesheets
+gem 'sass-rails', '~> 4.0.1'
+gem 'compass'
+gem 'compass-rails'
+gem 'bootstrap-sass', '< 3'
+gem 'agric'
+# Use Uglifier as compressor for JavaScript assets
+gem 'uglifier', '>= 1.3.0'
+# Use CoffeeScript for .js.coffee assets and views
+gem 'coffee-rails', '~> 4.0.1'
+# end
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer', platforms: :ruby
