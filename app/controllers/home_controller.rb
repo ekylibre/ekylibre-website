@@ -13,7 +13,7 @@ class HomeController < ApplicationController
 
     @articles = Rails.cache.read(:articles)
     unless @articles
-      feed = 'http://forum.ekylibre.org/c/ekylibre-erp/news.rss'
+      feed = 'http://forum.ekylibre.org/c/ekylibre/news.rss'
       rss = Feedjira::Feed.fetch_and_parse(feed)
       @articles = Array.new
       5.times do |i|

@@ -12,7 +12,7 @@ gem 'feedjira'
 gem 'haml'
 gem 'markdown'
 
-group :assets do
+group :assets, :development do
   # Use SCSS for stylesheets
   gem 'sass-rails', '~> 4.0.1'
   gem 'compass'
