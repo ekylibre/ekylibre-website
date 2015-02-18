@@ -47,6 +47,22 @@
   %ul
     %li= link_to("Accéder à la démonstration", 'http://demo.ekylibre.org')
 
+= slide :partners do
+  %h2 Partenaires      
+  %h3 Ekylibre
+  %p Jeune start-up qui reprend le flambeau du projet Ekylibre et en assure la gestion et le développement.
+  %p Elle propose des prestations autour de ses outils libres.
+  %p
+    = link_to("Site officiel", "http://ekylibre.com")
+    = " &bull; ".html_safe
+    = link_to("Offre", "http://ekylibre.com/offers/farmers")
+  %h3 Ergolis
+  %p Premier diffuseur de la solution Ekylibre sous forme de service en ligne.
+  %p
+    = link_to("Site officiel", "http://ergolis.com")
+    = " &bull; ".html_safe
+    = link_to("Offre", "http://ergolis.com#pricing")
+
 = slide :legals do
   :markdown
     Ce projet a été cofinancé par l'Union Européenne. L'Europe s'engage en Aquitaine avec le Fonds européen de développement régional. 
