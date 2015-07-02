@@ -20,14 +20,16 @@
 
 = render "menu"
 
-= slide :video do
-  %iframe{src: "http://www.youtube.com/embed/#{@video}?autohide=1&autoplay=0&color=white&modestbranding=1&rel=0&showinfo=0&theme=light&listType=user_uploads", frameborder: 0, allowfullscreen: true, class: "video"}
+- if @video
+  = slide :video do
+    %iframe{src: "http://www.youtube.com/embed/#{@video}?autohide=1&autoplay=0&color=white&modestbranding=1&rel=0&showinfo=0&theme=light&listType=user_uploads", frameborder: 0, allowfullscreen: true, class: "video"}
 
-= slide :news do
-  %h2 
-    %i.icon-bullhorn
-    News
-  = render 'news'
+- if @articles.respond_to?(:any?) and @articles.any?
+  = slide :news do
+    %h2 
+      %i.icon-bullhorn
+      News
+    = render 'news'
 
 = slide :screenshots do
   %h2 
@@ -43,7 +45,7 @@
     This version uses the last stabilised sources of the project. 
     Consequently, it shows all the last new features:
   %ul
-    %li= link_to("Access to Demonstration", 'http://demo.ekylibre.org')
+    %li= link_to("Access to demonstration", 'http://demo.ekylibre.org')
 
 = slide :legals do
   :markdown
